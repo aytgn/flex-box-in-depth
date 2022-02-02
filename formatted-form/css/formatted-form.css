@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+.field-row {
+  display: flex;
+  align-items: center;
+}
+.field-row > label {
+  flex: 2 1 0%;
+}
+.field-row > input,
+.field-row > textarea {
+  float: 3 1 0%;
+}
+.top-align-label > label {
+  align-self: flex-start;
+}
+
+/* * {
+  box-sizing: border-box;
+}
+
+.field-row > * {
+  float: left;
+}
+
+.field-row::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+.field-row > label {
+  padding: 6px 0;
+  width: 40%;
+}
+
+.field-row > input,
+.field-row > textarea {
+  width: 60%;
+} */
