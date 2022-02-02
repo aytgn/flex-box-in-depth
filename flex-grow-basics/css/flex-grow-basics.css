@@ -1,0 +1,26 @@
+/* select all items */
+.no-items-grow .item {
+  /* default */
+  flex-grow: 0;
+}
+
+.all-items-grow .item {
+  /* give all the item same value; same growing rate (main axis) in order to fill container */
+  flex-grow: 1;
+}
+
+.first-item-grows .item:first-of-type {
+  /* only first(selected) item grown, as possible as it can */
+  flex-grow: 1;
+}
+
+.third-item-grows .item:last-of-type {
+  /* starting empty space is 150px. Growing %50 is growing 75px */
+  flex-grow: 0.5;
+}
+
+.multiple-items-grow .item:first-of-type,
+.multiple-items-grow .item:last-of-type {
+  /* starting empty space is 150px. when both grow %50 of 150px => 75px and 75px they fill the box  */
+  flex-grow: 0.5;
+}

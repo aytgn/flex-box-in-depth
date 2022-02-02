@@ -1,0 +1,16 @@
+.stretch {
+  /* already stretching */
+  align-self: stretch;
+}
+
+.flex-start {
+  align-self: flex-start;
+}
+
+.flex-end {
+  align-self: flex-end;
+}
+
+.center {
+  align-self: center;
+}

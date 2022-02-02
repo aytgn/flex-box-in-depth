@@ -1,0 +1,9 @@
+.container {
+  /* ony big as content init (items) */
+  display: flex;
+}
+
+.inline-container {
+  /* ony big as content init (container)  */
+  display: inline-flex;
+}

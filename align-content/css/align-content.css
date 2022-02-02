@@ -1,0 +1,36 @@
+.stretch-container {
+  /* default */
+  align-content: stretch;
+}
+
+/* align-content: The CSS align-content property sets the distribution of space between and around content items along a flexbox's cross-axis. */
+
+.flex-start-container {
+  /* no more stretch, all items try to be at top as possible */
+  align-content: flex-start;
+}
+
+.flex-end-container {
+  /* items try to be at bottom, but last at the bottom */
+  /* use wrap-reverse to bottom one */
+  align-content: flex-end;
+}
+
+.center-container {
+  /* items try to be at middle */
+  align-content: center;
+}
+
+.space-around-container {
+  /* items give space while wrapping */
+  align-content: space-around;
+}
+
+.space-between-container {
+  /* items have all the space while wrapping */
+  align-content: space-between;
+}
+
+.must-use-align-items-aswell-container {
+  align-items: center;
+}

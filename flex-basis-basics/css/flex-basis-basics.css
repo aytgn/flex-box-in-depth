@@ -1,0 +1,43 @@
+.do-not-use-widths .item {
+  /* when flex-direction change to colum, we want 60px height instead of width */
+  width: 60px;
+}
+.do-not-use-widths {
+  flex-direction: column;
+}
+
+.auto-basis-container .item:first-of-type {
+  /* default */
+  flex-basis: auto;
+  /* grow slightly */
+  width: 60px;
+}
+
+.fixed-value-basis-container .item {
+  /* all items main axis heights are 60px; */
+  flex-basis: 60px;
+}
+.fixed-value-basis-container {
+  /* now,height(to main axis) of the items are 62px. flex automatically arranged  */
+  flex-direction: column;
+}
+
+.fluid-value-basis-container .item {
+  flex-basis: 23%;
+}
+.fluid-value-basis-container {
+  flex-direction: column;
+}
+
+.items-can-still-grow-container .item:first-of-type {
+  flex-grow: 1;
+}
+
+.items-can-still-shrink-container .item {
+  flex-basis: 100px;
+  flex-shrink: 0;
+}
+
+.items-can-still-shrink-container .item:first-of-type {
+  flex-shrink: 1;
+}

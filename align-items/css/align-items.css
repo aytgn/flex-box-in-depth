@@ -1,0 +1,24 @@
+.stretch-container {
+  /* default */
+  align-items: stretch;
+}
+
+.flex-start-container {
+  /* items no more stretching; items start from cross axis's start */
+  align-items: flex-start;
+}
+
+.flex-end-container {
+  /* items no more stretching; items start from cross axis's end */
+  align-items: flex-end;
+}
+
+.center-container {
+  /* center of item at center of cross axis */
+  align-items: center;
+}
+
+.baseline-container {
+  /* try to align contents together */
+  align-items: baseline;
+}

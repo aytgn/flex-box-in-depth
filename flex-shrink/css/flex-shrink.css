@@ -1,0 +1,31 @@
+/* to see results better: use small view size (1 container per row) */
+
+.item {
+  width: 100px;
+}
+
+.all-shrink-container .item {
+  /* default */
+  flex-shrink: 1;
+}
+
+.all-no-shrink-container .item {
+  /* no shrink? yes overflow! */
+  flex-shrink: 0;
+}
+
+.one-item-shrink-container .item {
+  flex-shrink: 0;
+}
+.one-item-shrink-container .item:first-of-type {
+  /* shrink as much as possible */
+  flex-shrink: 1;
+}
+
+.one-two-one-one-container .item {
+  flex-shrink: 1;
+}
+.one-two-one-one-container .item:nth-of-type(2) {
+  /* 100px is the no-shrink overflow. 0.20:0.40:0.20:0.20 shrink rates %40 of 100px is 40px. so 100-40 = 60px last state of 2th item  */
+  flex-shrink: 2;
+}

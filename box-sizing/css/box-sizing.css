@@ -1,0 +1,17 @@
+.width-container {
+  width: 300px;
+}
+
+.height-container {
+  height: 300px;
+}
+
+.content-box-sizing-container {
+  /* default: sizing only consider content box */
+  box-sizing: content-box;
+}
+
+.border-box-sizing-container {
+  /* sizing considers borders and paddings */
+  box-sizing: border-box;
+}

@@ -1,0 +1,29 @@
+.same-ratio .item {
+  /* same grow value to all items */
+  flex-grow: 2;
+}
+
+.one-one-two .item {
+  flex-grow: 1;
+}
+.one-one-two .item:last-of-type {
+  flex-grow: 2;
+  /*1th item grow =>0.25 2th item grow => 0.25 3th item grow=> 0.50. 300px empty space;
+  0.50 is 150px. 3th item grow 150. 3th item last state is 50+150 =>200px
+  */
+}
+
+.one-one-three .item {
+  flex-grow: 1;
+}
+.one-one-three .item:last-of-type {
+  flex-grow: 3;
+  /* 1th item grow 0.20, 2th item grow 0.20; 3th item grow 0.60. Total 300px to grow 3th item grow is 180px 180+50=230px 3th item last state */
+}
+
+.two-one-two .item {
+  flex-grow: 2;
+}
+.two-one-two .item:nth-of-type(2) {
+  flex-grow: 1;
+}

@@ -1,0 +1,14 @@
+.no-wrap {
+  /* Default */
+  flex-wrap: nowrap;
+}
+
+.wrap {
+  /* if items overflowing, flexbox lessen cross axis fill and use space to fill other items  */
+  flex-wrap: wrap;
+}
+
+.wrap-reverse {
+  /* sıkışmaya çalışan itemler diğerlerini itiyor */
+  flex-wrap: wrap-reverse;
+}

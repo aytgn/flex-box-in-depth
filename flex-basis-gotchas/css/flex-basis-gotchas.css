@@ -1,0 +1,35 @@
+.auto-zero-container .item {
+  /* since there is a content and s**t. 0 width is not feasible */
+  flex-basis: 0;
+  /* flex-basis:0 overrides width. */
+  width: 70px;
+}
+.auto-zero-container .item:first-of-type {
+  /* default: does not override width prop. */
+  flex-basis: auto;
+}
+
+.max-width-container .item {
+  /* flex-basis does not override max-width; max-width override flex-basis */
+  max-width: 70px;
+  flex-basis: 80px;
+  flex-shrink: 0;
+}
+
+.min-width-container .item {
+  /* min-width override flex-basis */
+  min-width: 70px;
+  flex-basis: 60px;
+}
+.max-height-container {
+  flex-direction: column;
+}
+.max-height-container .item {
+  max-height: 60px;
+  flex-basis: 70px;
+}
+
+.min-height-container {
+  min-height: 70px;
+  flex-basis: 60px;
+}

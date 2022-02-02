@@ -1,0 +1,28 @@
+.container {
+  /* flex-direction: column */
+}
+
+.flex-start-container {
+  /* default */
+  justify-content: flex-start;
+}
+
+.flex-end-container {
+  /* MAIN end to MAIN start */
+  justify-content: flex-end;
+}
+
+.center-container {
+  /* cent of the MAIN end and start */
+  justify-content: center;
+}
+
+.space-around-container {
+  /* empty spaces(gutters-gap) around items */
+  justify-content: space-around;
+}
+
+.space-between-container {
+  /* empty spaces between items */
+  justify-content: space-between;
+}

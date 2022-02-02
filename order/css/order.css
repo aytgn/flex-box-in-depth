@@ -1,0 +1,29 @@
+.default-order .item {
+  /* default*/
+  order: 0;
+}
+
+.last-to-first .item:last-of-type {
+  /* lower order value => closer to main axis start */
+  order: -1;
+}
+
+.first-to-last .item:first-of-type {
+  /* lower order value => closer to main axis start */
+  order: 1;
+}
+
+/* all the even child named item */
+.even-to-front .item:nth-of-type(even) {
+  /* evens are closer to main start */
+  order: -3;
+}
+.even-to-front .item:last-of-type {
+  /* 4th item is closer to main start */
+  order: -4;
+}
+
+.jumbled .item:nth-of-type(3) {
+  /* 3th item is closer to main start */
+  order: -2;
+}
