@@ -1,0 +1,21 @@
+.page-layout {
+  display: flex;
+}
+
+.column {
+  /* equal grow and shrink and 0 basis */
+  flex: 1 1 0%;
+}
+
+/* .column {
+  box-sizing: border-box;
+  float: left;
+  width: 33.333%;
+  height: 100%;
+}
+
+.page-layout::after {
+  display: block;
+  content: "";
+  clear: both;
+} */
