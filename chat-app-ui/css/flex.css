@@ -1,0 +1,40 @@
+* {
+  /* basis: 0% => be as small as possible  */
+  flex: 0 0 0%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#chat-container {
+  /* first be as small as possible, then grow as possible and shrink if overflow. Flex:1 = Flex: 1 1 0 */
+  display: flex;
+  flex: 1 1 0%;
+}
+#side-bar {
+  flex: 0 1 0%;
+  display: flex;
+  flex-direction: column;
+}
+#chat-window {
+  flex: 1 1 0%;
+}
+#conversation-list {
+  flex: 1 1 0%;
+}
+#search-container {
+  flex: 0 0 71px;
+  /* since default flex main axis is horizontal, child elements will try to shrink horizontal and grow vertical */
+  display: flex;
+  /* changing flex direction to row force child elements shrink vertical grow horizontal */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#search-container > input {
+  /* before flexing, set main axis length of item 30px which is vertical in our case(height). And no grow or shrink */
+  flex: 0 0 30px;
+}
