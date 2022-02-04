@@ -21,6 +21,8 @@ body {
 }
 #chat-window {
   flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
 }
 #conversation-list {
   flex: 1 1 0%;
@@ -37,4 +39,39 @@ body {
 #search-container > input {
   /* before flexing, set main axis length of item 30px which is vertical in our case(height). And no grow or shrink */
   flex: 0 0 30px;
+}
+
+#new-message-container {
+  display: flex;
+  flex: 0 0 78px;
+  /* in flexbox, items try to grow cross-axis and shrink main axis.However align-items force them to shrink cross-axis too. */
+  align-items: center;
+}
+#new-message-container > a {
+  /* no shrink, no grow, just 40px on main-axis */
+  flex: 0 0 40px;
+  display: flex;
+  /* plus sign in center */
+  align-items: center;
+  justify-content: center;
+}
+
+#chat-message-list {
+  /* grow main axis(since direction column, main axis is vertical) 0 basis is be small as possible*/
+  flex: 1 0 0%;
+}
+
+#chat-title {
+  flex: 0 0 71px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#chat-title > span {
+  flex: 1 0 0%;
+}
+
+.trash-logo {
+  flex: 0 0 36px;
 }

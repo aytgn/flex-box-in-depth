@@ -72,3 +72,30 @@ html {
   text-decoration: none;
   font-size: 3.6rem;
 }
+
+#chat-title {
+  background: #eee;
+  padding: 0 20px;
+  font-weight: bold;
+  box-shadow: 0 1px 3px -1px rgba(0, 0, 0, 0.75);
+  border-radius: 0 10px 0 0;
+  font-size: 2rem;
+  color: #0048aa;
+}
+
+#chat-message-list {
+  padding: 0 20px;
+}
+
+#chat-form {
+  background: #eee;
+  padding-left: 42px;
+  padding-right: 22px;
+  border-radius: 0 0 10px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.trash-logo {
+  stroke: #0048aa;
+  height: 36px;
+}
