@@ -76,17 +76,32 @@ body {
   flex: 0 0 36px;
 }
 
-#chat-form{
+#chat-form {
   flex: 0 0 78px;
   display: flex;
   align-items: center;
 }
 
-#chat-form > input{
+#chat-form > input {
   flex: 1 0 0%;
 }
 
-
 #attachment-logo {
   flex: 0 0 32px;
+}
+
+.conversation {
+  display: flex;
+}
+
+.conversation-details {
+  flex: 1 0 0%;
+}
+
+.conversation-title {
+  display: flex;
+}
+
+.title-text {
+  flex: 1 0 0%;
 }

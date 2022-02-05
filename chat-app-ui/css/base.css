@@ -115,3 +115,46 @@ html {
   border-radius: 6px;
   font-size: 1.4rem;
 }
+
+.conversation {
+  color: #ddd;
+  font-size: 1.3rem;
+  border-bottom: 1px solid #002c88;
+  padding: 20px 20px 20px 15px;
+  max-width: 300px;
+}
+
+.conversation.active,
+.conversation:hover {
+  background: #002c88;
+}
+
+.conversation:hover {
+  cursor: pointer;
+}
+
+.conversation > img {
+  margin-right: 15px;
+  max-width: 40px;
+  max-height: 40px;
+  height: 40px;
+  border-radius: 100%;
+}
+
+.title-text {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #eee;
+}
+
+.created-date {
+  color: #ddd;
+  font-size: 1rem;
+  white-space: nowrap;
+}
+
+.conversation-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
