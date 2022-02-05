@@ -123,5 +123,6 @@ body {
   display: flex;
   flex-direction: column;
   flex: 0 0 70%;
+  /* default is stretch. Keep in mind */
   align-items: flex-start;
 }
