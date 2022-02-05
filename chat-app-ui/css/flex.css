@@ -1,138 +1,139 @@
 * {
-  /* basis: 0% => be as small as possible  */
-  flex: 0 0 0%;
+    flex: 0 0 0%;
+    flex-flow: row nowrap;
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #chat-container {
-  /* first be as small as possible, then grow as possible and shrink if overflow. Flex:1 = Flex: 1 1 0 */
-  display: flex;
-  flex: 1 1 0%;
+    flex: 1 1 0%;
+    display: flex;
 }
-#side-bar {
-  flex: 0 1 0%;
-  display: flex;
-  flex-direction: column;
-}
+
 #chat-window {
-  flex: 1 1 0%;
-  display: flex;
-  flex-direction: column;
+    flex: 1 0 0%;
+    display: flex;
+    flex-direction: column;
 }
+
+#side-bar {
+    display: flex;
+    flex-direction: column;
+}
+
 #conversation-list {
-  flex: 1 1 0%;
+    flex: 1 0 0%;
 }
+
 #search-container {
-  flex: 0 0 71px;
-  /* since default flex main axis is horizontal, child elements will try to shrink horizontal and grow vertical */
-  display: flex;
-  /* changing flex direction to row force child elements shrink vertical grow horizontal */
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    flex: 0 0 71px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-#search-container > input {
-  /* before flexing, set main axis length of item 30px which is vertical in our case(height). And no grow or shrink */
-  flex: 0 0 30px;
+
+#search-container input {
+    flex: 0 0 30px;
 }
 
 #new-message-container {
-  display: flex;
-  flex: 0 0 78px;
-  /* in flexbox, items try to grow cross-axis and shrink main axis.However align-items force them to shrink cross-axis too. */
-  align-items: center;
+    flex: 0 0 78px;
+    display: flex;
+    align-items: center;
 }
-#new-message-container > a {
-  /* no shrink, no grow, just 40px on main-axis */
-  flex: 0 0 40px;
-  display: flex;
-  /* plus sign in center */
-  align-items: center;
-  justify-content: center;
+
+#new-message-container a {
+    flex: 0 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #chat-message-list {
-  /* grow main axis(since direction column, main axis is vertical) 0 basis is be small as possible*/
-  flex: 1 0 0%;
-  display: flex;
-  flex-flow: column-reverse nowrap;
+    flex: 1 0 0%;
+    display: flex;
+    flex-flow: column-reverse nowrap;
 }
 
 #chat-title {
-  flex: 0 0 71px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    flex: 0 0 71px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #chat-title > span {
-  flex: 1 0 0%;
+    flex: 1 0 0%;
 }
 
 .trash-logo {
-  flex: 0 0 36px;
+    flex: 0 0 36px;
 }
 
 #chat-form {
-  flex: 0 0 78px;
-  display: flex;
-  align-items: center;
+    flex: 0 0 78px;
+    display: flex;
+    align-items: center;
 }
 
 #chat-form > input {
-  flex: 1 0 0%;
+    flex: 1 0 0%;
 }
 
 #attachment-logo {
-  flex: 0 0 32px;
+    flex: 0 0 32px;
 }
 
 .conversation {
-  display: flex;
+    display: flex;
 }
 
 .conversation-details {
-  flex: 1 0 0%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+    flex: 1 0 0%;
+    display: flex;
+    flex-direction: column;
 }
 
 .conversation-title {
-  display: flex;
+    display: flex;
+    flex: 1 0 0%;
 }
 
 .title-text {
-  flex: 1 0 0%;
+    flex: 1 0 0%;
 }
 
 .conversation-message {
-  flex: 0 0 auto;
-}
-.message-row {
-  display: flex;
-  flex: 0 0 auto;
+    flex: 0 0 auto;
 }
 
-.message-row.you-message {
-  justify-content: flex-end;
-  flex: 0 0 auto;
+.message-row {
+    display: flex;
+    flex: 0 0 auto;
+}
+
+.message-container {
+    display: flex;
+    flex: 0 0 70%;
 }
 
 .message-details {
-  display: flex;
-  flex-direction: column;
-  flex: 0 0 0%;
-  flex-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1 0 0%;
 }
 
-.other-message .message-details {
-  flex: 0 0 70%;
-  /* default is stretch. Keep in mind */
-  align-items: flex-start;
+.you-message .message-text,
+.you-message .message-time {
+    align-self: flex-end;
+}
+
+.you-message {
+    justify-content: flex-end;
 }
