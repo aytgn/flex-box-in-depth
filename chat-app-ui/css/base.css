@@ -145,6 +145,9 @@ html {
   font-weight: bold;
   margin-right: 10px;
   color: #eee;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
 }
 
 .created-date {
@@ -154,7 +157,15 @@ html {
 }
 
 .conversation-details {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  overflow-x: hidden;
+}
+
+.conversation-message {
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+}
+
+#conversation-list {
+  overflow-y: scroll;
 }
