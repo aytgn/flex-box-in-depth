@@ -190,6 +190,7 @@ html {
   color: #eee;
   border: 1px solid #0048aa;
   border-radius: 14px 14px 0 14px;
+  white-space: nowrap;
 }
 
 .other-message .message-text {
