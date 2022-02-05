@@ -59,6 +59,8 @@ body {
 #chat-message-list {
   /* grow main axis(since direction column, main axis is vertical) 0 basis is be small as possible*/
   flex: 1 0 0%;
+  display: flex;
+  flex-flow: column-reverse nowrap;
 }
 
 #chat-title {
