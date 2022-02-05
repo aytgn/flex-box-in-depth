@@ -75,3 +75,18 @@ body {
 .trash-logo {
   flex: 0 0 36px;
 }
+
+#chat-form{
+  flex: 0 0 78px;
+  display: flex;
+  align-items: center;
+}
+
+#chat-form > input{
+  flex: 1 0 0%;
+}
+
+
+#attachment-logo {
+  flex: 0 0 32px;
+}
